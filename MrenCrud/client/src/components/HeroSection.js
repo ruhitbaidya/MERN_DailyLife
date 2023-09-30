@@ -23,9 +23,11 @@ const HeroSection = () => {
                                 1000,
                                 'I Know Javascript',
                                 1000,
-                                'i Know Node Js, React js, Express js, MongoDB, Redux.',
+                                'I Know Node Js, React js',
                                 1000,
-                                'i am Useing This Techanology for my work',
+                                'Express js, MongoDB, Redux.',
+                                1000,
+                                'I am Useing This Techanology for work',
                                 1000
                             ]}
                             speed={30}

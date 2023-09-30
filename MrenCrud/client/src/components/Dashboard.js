@@ -49,10 +49,9 @@ const Dashboard = () => {
         setName("")
     }
     
-    // console.log(notification.length)
+   
     return (
         <section>
-            {notification && notification.length > 0 ? toast.success("You Have a New Remainder message", { duration: 6000}) : ""}
             <nav className="bg-primary py-2">
                 <div className="container-fluid">
                     <div className="row">
@@ -104,18 +103,19 @@ const Dashboard = () => {
                 <div className="row mt-1">
                     <div className="col-md-2">
                         <ul className="list-group">
-                            <NavLink><li className="list-group-item" onClick={() => conponentHandel("calculator")}>Calculator</li></NavLink>
-                            <NavLink><li className="list-group-item" onClick={() => conponentHandel("recCRUD")}>React CRUD</li></NavLink>
+                            {/* <NavLink><li className="list-group-item" onClick={() => conponentHandel("calculator")}>Calculator</li></NavLink>
+                            <NavLink><li className="list-group-item" onClick={() => conponentHandel("recCRUD")}>React CRUD</li></NavLink> */}
                             <NavLink><li className="list-group-item" onClick={() => conponentHandel("Remainder")}>Remainder Message</li></NavLink>
-                            <NavLink><li className="list-group-item" onClick={() => conponentHandel("quizqApp")}>Quize App</li></NavLink>
+                            {/* <NavLink><li className="list-group-item" onClick={() => conponentHandel("quizqApp")}>Quize App</li></NavLink>
                             <NavLink><li className="list-group-item" onClick={() => conponentHandel("randompass")}>Random Password</li></NavLink>
                             <NavLink><li className="list-group-item" onClick={() => conponentHandel("randomColor")}>Random Color</li></NavLink>
-                            <NavLink><li className="list-group-item" onClick={() => conponentHandel("countryApp")}>Country Information</li></NavLink>
+                            <NavLink><li className="list-group-item" onClick={() => conponentHandel("countryApp")}>Country Information</li></NavLink> */}
                         </ul>
                     </div>
                     <div className="col-md-10">
                         {compo === "Remainder" ? <RemainderMessage /> : "Not Metch"}
                     </div>
+                    {notification && notification.length > 0 ? toast.success("You Have a New Remainder message", { duration: 6000}) : null}
                 </div>
             </div>
         </section>

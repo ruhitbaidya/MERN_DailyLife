@@ -7,7 +7,7 @@ const Navbar = () => {
         <>
             <nav className="navbar navbar-expand-lg bg-dark">
                 <div className="container">
-                    <a className="navbar-brand text-light">DailyLife</a>
+                    <Link className="navbar-brand text-light" to="/">DailyLife</Link>
                     <div className="justify-content-end" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
                             <Link className='btn btn-outline-light' to="/login">Sign In</Link>

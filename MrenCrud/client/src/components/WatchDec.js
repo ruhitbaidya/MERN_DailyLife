@@ -4,14 +4,14 @@ const WatchDec = () => {
   const [times, setTimes] = useState("")
   let zoon = "AM"
     const date = new Date();
-    const day = date.getDay() + 1;
-    const month = date.getMonth() + 1;
-    const year = date.getFullYear();
+    // const day = date.getDay() + 1;
+    // const month = date.getMonth() + 1;
+    // const year = date.getFullYear();
     let second = date.getSeconds();
     let munit = date.getMinutes();
     let hours = date.getHours();
-    const daysInWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const MonthName =  ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    // const daysInWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    // const MonthName =  ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     if(second <= 9){
       second = "0" + second
     }
